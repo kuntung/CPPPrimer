@@ -1,0 +1,4 @@
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/CMakeFiles/defineFunctest.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/CMakeFiles/test1.17.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/CMakeFiles/test1.4.1.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02/CMakeFiles/test2.1.2.dir
