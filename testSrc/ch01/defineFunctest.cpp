@@ -11,7 +11,6 @@ using namespace std;
 
 int main()
 {
-	printNum(10);
 
 	return 0;
 }
