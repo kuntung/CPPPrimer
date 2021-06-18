@@ -2,3 +2,7 @@
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/CMakeFiles/test1.17.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/CMakeFiles/test1.4.1.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02/CMakeFiles/test2.1.2.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02/CMakeFiles/test2.14.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/testDecAndDef.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/testInitial.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/varDefineTest.dir

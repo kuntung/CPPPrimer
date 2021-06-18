@@ -115,6 +115,20 @@ test2.1.2/fast:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.1.2.dir/build.make testSrc/ch02/CMakeFiles/test2.1.2.dir/build
 .PHONY : test2.1.2/fast
 
+# Convenience name for target.
+testSrc/ch02/CMakeFiles/test2.14.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch02/CMakeFiles/test2.14.dir/rule
+.PHONY : testSrc/ch02/CMakeFiles/test2.14.dir/rule
+
+# Convenience name for target.
+test2.14: testSrc/ch02/CMakeFiles/test2.14.dir/rule
+.PHONY : test2.14
+
+# fast build rule for target.
+test2.14/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.14.dir/build.make testSrc/ch02/CMakeFiles/test2.14.dir/build
+.PHONY : test2.14/fast
+
 test2.1.2.o: test2.1.2.cpp.o
 .PHONY : test2.1.2.o
 
@@ -139,6 +153,30 @@ test2.1.2.cpp.s:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.1.2.dir/build.make testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.s
 .PHONY : test2.1.2.cpp.s
 
+test2.14.o: test2.14.cpp.o
+.PHONY : test2.14.o
+
+# target to build an object file
+test2.14.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.14.dir/build.make testSrc/ch02/CMakeFiles/test2.14.dir/test2.14.cpp.o
+.PHONY : test2.14.cpp.o
+
+test2.14.i: test2.14.cpp.i
+.PHONY : test2.14.i
+
+# target to preprocess a source file
+test2.14.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.14.dir/build.make testSrc/ch02/CMakeFiles/test2.14.dir/test2.14.cpp.i
+.PHONY : test2.14.cpp.i
+
+test2.14.s: test2.14.cpp.s
+.PHONY : test2.14.s
+
+# target to generate assembly for a file
+test2.14.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch02/CMakeFiles/test2.14.dir/build.make testSrc/ch02/CMakeFiles/test2.14.dir/test2.14.cpp.s
+.PHONY : test2.14.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -148,9 +186,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test2.1.2"
+	@echo "... test2.14"
 	@echo "... test2.1.2.o"
 	@echo "... test2.1.2.i"
 	@echo "... test2.1.2.s"
+	@echo "... test2.14.o"
+	@echo "... test2.14.i"
+	@echo "... test2.14.s"
 .PHONY : help
 
 

@@ -153,6 +153,58 @@ test2.1.2/fast:
 	$(MAKE) -f testSrc/ch02/CMakeFiles/test2.1.2.dir/build.make testSrc/ch02/CMakeFiles/test2.1.2.dir/build
 .PHONY : test2.1.2/fast
 
+#=============================================================================
+# Target rules for targets named test2.14
+
+# Build rule for target.
+test2.14: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test2.14
+.PHONY : test2.14
+
+# fast build rule for target.
+test2.14/fast:
+	$(MAKE) -f testSrc/ch02/CMakeFiles/test2.14.dir/build.make testSrc/ch02/CMakeFiles/test2.14.dir/build
+.PHONY : test2.14/fast
+
+#=============================================================================
+# Target rules for targets named testDecAndDef
+
+# Build rule for target.
+testDecAndDef: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testDecAndDef
+.PHONY : testDecAndDef
+
+# fast build rule for target.
+testDecAndDef/fast:
+	$(MAKE) -f testSrc/tests/CMakeFiles/testDecAndDef.dir/build.make testSrc/tests/CMakeFiles/testDecAndDef.dir/build
+.PHONY : testDecAndDef/fast
+
+#=============================================================================
+# Target rules for targets named testInitial
+
+# Build rule for target.
+testInitial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testInitial
+.PHONY : testInitial
+
+# fast build rule for target.
+testInitial/fast:
+	$(MAKE) -f testSrc/tests/CMakeFiles/testInitial.dir/build.make testSrc/tests/CMakeFiles/testInitial.dir/build
+.PHONY : testInitial/fast
+
+#=============================================================================
+# Target rules for targets named varDefineTest
+
+# Build rule for target.
+varDefineTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 varDefineTest
+.PHONY : varDefineTest
+
+# fast build rule for target.
+varDefineTest/fast:
+	$(MAKE) -f testSrc/tests/CMakeFiles/varDefineTest.dir/build.make testSrc/tests/CMakeFiles/varDefineTest.dir/build
+.PHONY : varDefineTest/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +217,10 @@ help:
 	@echo "... test1.17"
 	@echo "... test1.4.1"
 	@echo "... test2.1.2"
+	@echo "... test2.14"
+	@echo "... testDecAndDef"
+	@echo "... testInitial"
+	@echo "... varDefineTest"
 .PHONY : help
 
 
