@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Wconversion -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0    CMakeFiles/test3.5.4.dir/test3.5.4.cpp.o  -o ../../bin/test3.5.4 -rdynamic 

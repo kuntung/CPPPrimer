@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiaotang/GitHub/CPPPrimer/testSrc/ch03/test3.5.5.cpp
+iostream
+-
+vector
+-
+iterator
+-
+

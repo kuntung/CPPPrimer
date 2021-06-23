@@ -56,15 +56,15 @@ testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o: testSrc/ch02/CMakeFiles/t
 testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o: ../../testSrc/ch02/test2.1.2.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o -c /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o -c /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp
 
 testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.1.2.dir/test2.1.2.cpp.i"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp > CMakeFiles/test2.1.2.dir/test2.1.2.cpp.i
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp > CMakeFiles/test2.1.2.dir/test2.1.2.cpp.i
 
 testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.1.2.dir/test2.1.2.cpp.s"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp -o CMakeFiles/test2.1.2.dir/test2.1.2.cpp.s
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xiaotang/GitHub/CPPPrimer/testSrc/ch02/test2.1.2.cpp -o CMakeFiles/test2.1.2.dir/test2.1.2.cpp.s
 
 testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o.requires:
 .PHONY : testSrc/ch02/CMakeFiles/test2.1.2.dir/test2.1.2.cpp.o.requires

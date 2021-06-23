@@ -70,6 +70,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles/progress.marks
@@ -153,6 +163,97 @@ test2.1.2/fast:
 	$(MAKE) -f testSrc/ch02/CMakeFiles/test2.1.2.dir/build.make testSrc/ch02/CMakeFiles/test2.1.2.dir/build
 .PHONY : test2.1.2/fast
 
+#=============================================================================
+# Target rules for targets named test3.2.2
+
+# Build rule for target.
+test3.2.2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.2.2
+.PHONY : test3.2.2
+
+# fast build rule for target.
+test3.2.2/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.2.2.dir/build.make testSrc/ch03/CMakeFiles/test3.2.2.dir/build
+.PHONY : test3.2.2/fast
+
+#=============================================================================
+# Target rules for targets named test3.2.3
+
+# Build rule for target.
+test3.2.3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.2.3
+.PHONY : test3.2.3
+
+# fast build rule for target.
+test3.2.3/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.2.3.dir/build.make testSrc/ch03/CMakeFiles/test3.2.3.dir/build
+.PHONY : test3.2.3/fast
+
+#=============================================================================
+# Target rules for targets named test3.5.3
+
+# Build rule for target.
+test3.5.3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.5.3
+.PHONY : test3.5.3
+
+# fast build rule for target.
+test3.5.3/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.5.3.dir/build.make testSrc/ch03/CMakeFiles/test3.5.3.dir/build
+.PHONY : test3.5.3/fast
+
+#=============================================================================
+# Target rules for targets named test3.5.4
+
+# Build rule for target.
+test3.5.4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.5.4
+.PHONY : test3.5.4
+
+# fast build rule for target.
+test3.5.4/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.5.4.dir/build.make testSrc/ch03/CMakeFiles/test3.5.4.dir/build
+.PHONY : test3.5.4/fast
+
+#=============================================================================
+# Target rules for targets named test3.5.5
+
+# Build rule for target.
+test3.5.5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.5.5
+.PHONY : test3.5.5
+
+# fast build rule for target.
+test3.5.5/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.5.5.dir/build.make testSrc/ch03/CMakeFiles/test3.5.5.dir/build
+.PHONY : test3.5.5/fast
+
+#=============================================================================
+# Target rules for targets named test3.6
+
+# Build rule for target.
+test3.6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test3.6
+.PHONY : test3.6
+
+# fast build rule for target.
+test3.6/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/test3.6.dir/build.make testSrc/ch03/CMakeFiles/test3.6.dir/build
+.PHONY : test3.6/fast
+
+#=============================================================================
+# Target rules for targets named testFor
+
+# Build rule for target.
+testFor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testFor
+.PHONY : testFor
+
+# fast build rule for target.
+testFor/fast:
+	$(MAKE) -f testSrc/ch03/CMakeFiles/testFor.dir/build.make testSrc/ch03/CMakeFiles/testFor.dir/build
+.PHONY : testFor/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +262,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... defineFunctest"
 	@echo "... test1.17"
 	@echo "... test1.4.1"
 	@echo "... test2.1.2"
+	@echo "... test3.2.2"
+	@echo "... test3.2.3"
+	@echo "... test3.5.3"
+	@echo "... test3.5.4"
+	@echo "... test3.5.5"
+	@echo "... test3.6"
+	@echo "... testFor"
 .PHONY : help
 
 

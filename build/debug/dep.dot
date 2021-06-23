@@ -6,4 +6,11 @@ node [
     "node1" [ label="test1.17" shape="house"];
     "node2" [ label="test1.4.1" shape="house"];
     "node3" [ label="test2.1.2" shape="house"];
+    "node4" [ label="test3.2.2" shape="house"];
+    "node5" [ label="test3.2.3" shape="house"];
+    "node6" [ label="test3.5.3" shape="house"];
+    "node7" [ label="test3.5.4" shape="house"];
+    "node8" [ label="test3.5.5" shape="house"];
+    "node9" [ label="test3.6" shape="house"];
+    "node10" [ label="testFor" shape="house"];
 }

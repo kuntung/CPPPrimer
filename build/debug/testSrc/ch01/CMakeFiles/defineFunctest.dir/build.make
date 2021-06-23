@@ -56,15 +56,15 @@ testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o: testSrc/ch01/CM
 testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o: ../../testSrc/ch01/defineFunctest.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o -c /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o -c /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp
 
 testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/defineFunctest.dir/defineFunctest.cpp.i"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp > CMakeFiles/defineFunctest.dir/defineFunctest.cpp.i
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp > CMakeFiles/defineFunctest.dir/defineFunctest.cpp.i
 
 testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/defineFunctest.dir/defineFunctest.cpp.s"
-	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp -o CMakeFiles/defineFunctest.dir/defineFunctest.cpp.s
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xiaotang/GitHub/CPPPrimer/testSrc/ch01/defineFunctest.cpp -o CMakeFiles/defineFunctest.dir/defineFunctest.cpp.s
 
 testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o.requires:
 .PHONY : testSrc/ch01/CMakeFiles/defineFunctest.dir/defineFunctest.cpp.o.requires

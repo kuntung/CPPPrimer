@@ -36,6 +36,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch01/cmake_install.cmake")
   INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch02/cmake_install.cmake")
+  INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

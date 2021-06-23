@@ -1,0 +1,8 @@
+add_executable(test3.2.2 test3.2.2.cpp)
+add_executable(test3.2.3 test3.2.3.cpp)
+add_executable(testFor testFor.cpp)
+add_executable(test3.5.3 test3.5.3.cpp)
+#add_executable(test3.3.3 test3.3.3.cpp)
+add_executable(test3.5.4 test3.5.4.cpp)
+add_executable(test3.5.5 test3.5.5.cpp)
+add_executable(test3.6 test3.6.cpp)
