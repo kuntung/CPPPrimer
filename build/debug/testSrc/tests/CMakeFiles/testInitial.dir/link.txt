@@ -1,1 +1,0 @@
-g++   -O0    CMakeFiles/testInitial.dir/testInitial.cpp.o  -o ../../bin/testInitial -rdynamic 
