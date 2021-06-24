@@ -167,6 +167,19 @@ test2.14/fast:
 .PHONY : test2.14/fast
 
 #=============================================================================
+# Target rules for targets named test4.2
+
+# Build rule for target.
+test4.2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.2
+.PHONY : test4.2
+
+# fast build rule for target.
+test4.2/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/build
+.PHONY : test4.2/fast
+
+#=============================================================================
 # Target rules for targets named testDecAndDef
 
 # Build rule for target.
@@ -218,6 +231,7 @@ help:
 	@echo "... test1.4.1"
 	@echo "... test2.1.2"
 	@echo "... test2.14"
+	@echo "... test4.2"
 	@echo "... testDecAndDef"
 	@echo "... testInitial"
 	@echo "... varDefineTest"

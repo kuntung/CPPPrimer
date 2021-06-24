@@ -7,7 +7,8 @@ node [
     "node2" [ label="test1.4.1" shape="house"];
     "node3" [ label="test2.1.2" shape="house"];
     "node4" [ label="test2.14" shape="house"];
-    "node5" [ label="testDecAndDef" shape="house"];
-    "node6" [ label="testInitial" shape="house"];
-    "node7" [ label="varDefineTest" shape="house"];
+    "node5" [ label="test4.2" shape="house"];
+    "node6" [ label="testDecAndDef" shape="house"];
+    "node7" [ label="testInitial" shape="house"];
+    "node8" [ label="varDefineTest" shape="house"];
 }

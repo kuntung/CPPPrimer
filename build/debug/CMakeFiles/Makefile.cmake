@@ -12,6 +12,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "../../testSrc/ch01/CMakeLists.txt"
   "../../testSrc/ch02/CMakeLists.txt"
+  "../../testSrc/ch04/CMakeLists.txt"
   "../../testSrc/tests/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -36,6 +37,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "testSrc/ch01/CMakeFiles/CMakeDirectoryInformation.cmake"
   "testSrc/ch02/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "testSrc/ch04/CMakeFiles/CMakeDirectoryInformation.cmake"
   "testSrc/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -46,6 +48,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "testSrc/ch01/CMakeFiles/test1.4.1.dir/DependInfo.cmake"
   "testSrc/ch02/CMakeFiles/test2.1.2.dir/DependInfo.cmake"
   "testSrc/ch02/CMakeFiles/test2.14.dir/DependInfo.cmake"
+  "testSrc/ch04/CMakeFiles/test4.2.dir/DependInfo.cmake"
   "testSrc/tests/CMakeFiles/testDecAndDef.dir/DependInfo.cmake"
   "testSrc/tests/CMakeFiles/testInitial.dir/DependInfo.cmake"
   "testSrc/tests/CMakeFiles/varDefineTest.dir/DependInfo.cmake"

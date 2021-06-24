@@ -267,6 +267,56 @@ clean: testSrc/ch02/CMakeFiles/test2.14.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory testSrc/ch04
+
+# Convenience name for "all" pass in the directory.
+testSrc/ch04/all: testSrc/ch04/CMakeFiles/test4.2.dir/all
+.PHONY : testSrc/ch04/all
+
+# Convenience name for "clean" pass in the directory.
+testSrc/ch04/clean: testSrc/ch04/CMakeFiles/test4.2.dir/clean
+.PHONY : testSrc/ch04/clean
+
+# Convenience name for "preinstall" pass in the directory.
+testSrc/ch04/preinstall:
+.PHONY : testSrc/ch04/preinstall
+
+#=============================================================================
+# Target rules for target testSrc/ch04/CMakeFiles/test4.2.dir
+
+# All Build rule for target.
+testSrc/ch04/CMakeFiles/test4.2.dir/all:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/depend
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  6
+	@echo "Built target test4.2"
+.PHONY : testSrc/ch04/CMakeFiles/test4.2.dir/all
+
+# Include target in all.
+all: testSrc/ch04/CMakeFiles/test4.2.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+testSrc/ch04/CMakeFiles/test4.2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles 0
+.PHONY : testSrc/ch04/CMakeFiles/test4.2.dir/rule
+
+# Convenience name for target.
+test4.2: testSrc/ch04/CMakeFiles/test4.2.dir/rule
+.PHONY : test4.2
+
+# clean rule for target.
+testSrc/ch04/CMakeFiles/test4.2.dir/clean:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/clean
+.PHONY : testSrc/ch04/CMakeFiles/test4.2.dir/clean
+
+# clean rule for target.
+clean: testSrc/ch04/CMakeFiles/test4.2.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory testSrc/tests
 
 # Convenience name for "all" pass in the directory.
@@ -292,7 +342,7 @@ testSrc/tests/preinstall:
 testSrc/tests/CMakeFiles/testDecAndDef.dir/all:
 	$(MAKE) -f testSrc/tests/CMakeFiles/testDecAndDef.dir/build.make testSrc/tests/CMakeFiles/testDecAndDef.dir/depend
 	$(MAKE) -f testSrc/tests/CMakeFiles/testDecAndDef.dir/build.make testSrc/tests/CMakeFiles/testDecAndDef.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  7
 	@echo "Built target testDecAndDef"
 .PHONY : testSrc/tests/CMakeFiles/testDecAndDef.dir/all
 
@@ -327,7 +377,7 @@ clean: testSrc/tests/CMakeFiles/testDecAndDef.dir/clean
 testSrc/tests/CMakeFiles/testInitial.dir/all:
 	$(MAKE) -f testSrc/tests/CMakeFiles/testInitial.dir/build.make testSrc/tests/CMakeFiles/testInitial.dir/depend
 	$(MAKE) -f testSrc/tests/CMakeFiles/testInitial.dir/build.make testSrc/tests/CMakeFiles/testInitial.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  8
 	@echo "Built target testInitial"
 .PHONY : testSrc/tests/CMakeFiles/testInitial.dir/all
 
@@ -362,7 +412,7 @@ clean: testSrc/tests/CMakeFiles/testInitial.dir/clean
 testSrc/tests/CMakeFiles/varDefineTest.dir/all:
 	$(MAKE) -f testSrc/tests/CMakeFiles/varDefineTest.dir/build.make testSrc/tests/CMakeFiles/varDefineTest.dir/depend
 	$(MAKE) -f testSrc/tests/CMakeFiles/varDefineTest.dir/build.make testSrc/tests/CMakeFiles/varDefineTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xiaotang/GitHub/CPPPrimer/build/debug/CMakeFiles  9
 	@echo "Built target varDefineTest"
 .PHONY : testSrc/tests/CMakeFiles/varDefineTest.dir/all
 
