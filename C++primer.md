@@ -274,6 +274,10 @@ int main()
 
 ![image-20210618195514027](C++primer.assets/image-20210618195514027.png)
 
+> 在 C++ 中 `'&'` 符号还有另一个功能——定义引用类型。**引用类型又叫做“左值引用”**。因此，不能将一个右值赋值给（非常量的）左值引用
+>
+> **常量左值引用：**`const T& ref`可以通过右值赋值，因为我们无法也不能通过该ref修改被引用的变量值
+
 ### 指针
 
 **指针和引用相比的不同之处：**
@@ -345,6 +349,304 @@ int main()
 
 **传入C风格字符串处理函数的`数组指针`必须是指向以空字符`\0`结尾的字符数组**
 
+## 表达式
+
+![image-20210624111654873](C++primer.assets/image-20210624111654873.png)
+
+### 运算符分类
+
+1. 一元运算符
+2. 二元运算符
+3. **函数调用也是一种特殊的运算符，对运算对象的数量没有限制**
+
+### 左值和右值
+
+https://eli.thegreenplace.net/2011/12/15/understanding-lvalues-and-rvalues-in-c-and-c
+
+![image-20210624112228703](C++primer.assets/image-20210624112228703.png)
+
+![image-20210624112429943](C++primer.assets/image-20210624112429943.png)
+
+#### 简单的定义
+
+*左值 (lvalue, locator value)* 表示了一个占据内存中某个可识别的位置（也就是一个地址）的对象。
+
+*右值 (rvalue)* 则使用排除法来定义。一个表达式不是 *左值* 就是 *右值* 。 那么，右值是一个 *不* 表示内存中某个可识别位置的对象的表达式。
+
+**作用：C++中函数通过返回左值的功能实现一些重载的操作符。`++,=,[]`**
+
+```c++
+std::map<int, float> mymap;
+mymap[10] = 5.6;
+
+// 之所以能够赋值给mymap[10]，是因为std::map::operator[]的重载返回的是一个可赋值的引用
+```
+
+#### 可被赋值的左值
+
+可修改左值是特殊的左值，**不含有数组类型、不完整类型、const 修饰**的类型。如果它是 `struct` 或 `union`，它的成员都（递归地）不应含有 const 修饰的类型。
+
+**左值和右值间的相互转化：**
+
+1. 左值可以隐式的转化为右值
+
+2. 右值可以显式地赋值给左值
+
+   > 例如：一元解引用操作符`*`需要一个右值参数，但返回一个左值结果。
+   >
+   > 相反地，一元取地址操作符`&`需要一个左值参数，返回一个右值
+
+### 优先级和结合律
+
+![image-20210624200259209](C++primer.assets/image-20210624200259209.png)
+
+**处理复合表达式的经验：**
+
+![image-20210624200410293](C++primer.assets/image-20210624200410293.png)
+
+![image-20210624200525109](C++primer.assets/image-20210624200525109.png)
+
+### 算术运算符
+
+**算术运算符类型：`+-*/%`**
+
+1. 溢出：当计算的结果超出该类型所能表示的范围时，就会产生溢出
+
+2. 取余运算的计算规则
+
+   ![image-20210624201010103](C++primer.assets/image-20210624201010103.png)
+
+   ![image-20210624201131947](C++primer.assets/image-20210624201131947.png)
+
+### 逻辑运算符和关系运算符
+
+![image-20210624210203829](C++primer.assets/image-20210624210203829.png)
+
+![image-20210624210747907](C++primer.assets/image-20210624210747907.png)
+
+### 赋值运算符
+
+#### 移动赋值操作符重载
+
+**C++11标准中引入的最强力的特性就是`右值引用`，以及相关的`移动语义`**
+
+**右值引用：**在一些特殊的情况下，我们可以使用右值的引用，并对右值进行修改。
+
+> 符号 `&&` 代表了新的 *右值引用 (rvalue reference)* 。顾名思义，右值引用可以让我们创建对右值的引用。而且在调用结束后，右值引用就会被销毁。我们可以利用这个特性将右值的内部内容“偷”过来——因为我们不再需要使用这个右值对象了！
+
+```c++
+class Intvec
+{
+public:
+    explicit Intvec(size_t num = 0)
+        : m_size(num), m_data(new int[m_size])
+    {
+        log("constructor");
+    }
+
+    ~Intvec()
+    {
+        log("destructor");
+        if (m_data) {
+            delete[] m_data;
+            m_data = 0;
+        }
+    }
+
+    Intvec(const Intvec& other)
+        : m_size(other.m_size), m_data(new int[m_size])
+    {
+        log("copy constructor");
+        for (size_t i = 0; i < m_size; ++i)
+            m_data[i] = other.m_data[i];
+    }
+
+    Intvec& operator=(const Intvec& other)
+    {
+        log("copy assignment operator");
+        Intvec tmp(other); // 在这里构建了一个栈上的对象，因此会调用一次构造和析构
+        std::swap(m_size, tmp.m_size);
+        std::swap(m_data, tmp.m_data);
+        return *this;
+    }
+private:
+    void log(const char* msg)
+    {
+        cout << "[" << this << "] " << msg << "\n";
+    }
+
+    size_t m_size;
+    int* m_data;
+};
+```
+
+**测试代码1：左值引用**
+
+```c++
+Intvec v1(20);  
+Intvec v2;
+
+cout << "assigning lvalue...\n";
+v2 = v1; // 将
+cout << "ended assigning lvalue...\n";
+// 运行结果
+assigning lvalue...
+[0x28fef8] copy assignment operator
+[0x28fec8] copy constructor // copy assignment operator内部的栈对象调用
+[0x28fec8] destructor
+ended assigning lvalue...
+```
+
+**测试代码2：右值引用**
+
+```c++
+cout << "assigning rvalue...\n";
+v2 = Intvec(33); // 临时对象Intvec(33),右值
+cout << "ended assigning rvalue...\n";
+
+// 运行结果
+assigning rvalue...
+[0x28ff08] constructor // 临时对象的构造
+[0x28fef8] copy assignment operator
+[0x28fec8] copy constructor
+[0x28fec8] destructor 
+[0x28ff08] destructor // 临时对象的析构
+ended assigning rvalue...
+```
+
+**移动赋值操作符实现**
+
+```c++
+Intvec& operator=(Intvec&& other)
+{
+    log("move assignment operator");
+    std::swap(m_size, other.m_size);
+    std::swap(m_data, other.m_data);
+    return *this;
+}
+
+// 输出
+assigning rvalue...
+[0x28ff08] constructor
+[0x28fef8] move assignment operator
+[0x28ff08] destructor
+ended assigning rvalue...
+```
+
+#### 赋值运算
+
+1. 赋值运算满足右结合律
+
+   ![image-20210625084927936](C++primer.assets/image-20210625084927936.png)
+
+2. 赋值运算符优先级较低，因此需要添加括号提升运算优先级
+
+### 复合运算符
+
+![image-20210625085305955](C++primer.assets/image-20210625085305955.png)
+
+### 递增和递减运算符
+
+**前置版本：**首先将运算对象加一或减一，然后将改变后的对象作为求值结果
+
+**后置版本：**将运算对象加一或减一，但是求值结果是运算对象改变之前的值的副本
+
+> 这两种运算符必须作用于左值运算对象，前置版本将对象本身作为左值返回，后置版本则将对象原始值的副本作为右值返回
+
+![image-20210625085843419](C++primer.assets/image-20210625085843419.png)
+
+![image-20210625090614614](C++primer.assets/image-20210625090614614.png)
+
+### 成员访问运算符
+
+**点运算符和箭头运算符**都可以访问成员
+
+因为解引用运算符`*`优先级低于点运算符`.`，所以当通过指针的形式访问对象成员时，需要添加()来确保优先级
+
+```c++
+string s1 = "a string", *p = &s1;
+auto n = s1.size(); // 运行string对象s1的size成员
+n = (*p).size();
+n = p->size();
+```
+
+![image-20210625091456395](C++primer.assets/image-20210625091456395.png)
+
+### 条件运算符：运算优先级非常低
+
+条件运算符(`?:`)允许我们把简单的if-else逻辑嵌入到单个表达式中
+
+```c++
+cond ? expr1 : expr2;
+```
+
+**嵌套条件运算符：**
+
+![image-20210625093156903](C++primer.assets/image-20210625093156903.png)
+
+**在输出表达式中使用条件运算符：**
+
+![image-20210625093429746](C++primer.assets/image-20210625093429746.png)
+
+### 位运算符
+
+![image-20210625100627747](C++primer.assets/image-20210625100627747.png)
+
+**`|=`运算符的工作原理同`+=`类似，将对应位做无进制加法**
+
+![image-20210625113721769](C++primer.assets/image-20210625113721769.png)
+
+### sizeof运算符
+
+sizeof运算符返回一条表达式或一个类型名字所占的字节数。满足`右结合律`，其结果是一个`size_t`类型的常量表达式
+
+- sizeof(type)
+- sizeof(expr)
+
+![image-20210625194542937](C++primer.assets/image-20210625194542937.png)
+
+![image-20210625194637069](C++primer.assets/image-20210625194637069.png)
+
+![image-20210625194742496](C++primer.assets/image-20210625194742496.png)
+
+### 逗号运算符
+
+![image-20210625200029934](C++primer.assets/image-20210625200029934.png)
+
+![image-20210625200406465](C++primer.assets/image-20210625200406465.png)
+
+### 类型转换
+
+在C++语言中，某些类型之间有关联，如果两种类型有关联，那么当程序需要其中一种类型的运算对象时，可以用另一种关联类型的对象或值来替代。
+
+**两种类型可以相互转换<=>他们是关联的**
+
+#### 隐式转换
+
+![image-20210625210835167](C++primer.assets/image-20210625210835167.png)
+
+**其他的隐式类型转换：**
+
+1. 数组转换成指针
+
+   > 当数组被用作`decltype`关键字的参数，或作为取地址符，sizeof及typeid等运算符的对象时，不会将数组转化为指针
+
+2. 指针的转换：
+
+   - 常量整数值0或字面值nullptr能转换成任意指针类型
+   - 指向任意非常量的指针能够转换成void*
+   - 指向任意对象的指针能转换成`const void*`
+
+#### 显式转换
+
+![image-20210625211806019](C++primer.assets/image-20210625211806019.png)
+
+![image-20210625211859184](C++primer.assets/image-20210625211859184.png)
+
+![image-20210625213535672](C++primer.assets/image-20210625213535672.png)
+
+
+
 # 知识点总结
 
 ## C++基础知识
@@ -374,6 +676,23 @@ int main()
 
 2. 将库定义的名字放在单一位置的机制
 
+### 显式类型转换
+
+1. `static_cast<type>(expression)：`适用于将较大的算数类型转化为较小的数据类型。作用在于：让编译器不再发出`较大的算数类型试图赋值给较小的数据类型时`的相关警告
+
+2. 适用于编译器无法自动执行的类型转换操作
+
+   > 用`static_cast`找回存在于void*的指针
+   >
+   > ```c++
+   > void* p = &d; // 正确：任何非常量对象的地址都能存入void*
+   > double *dp = static_cast<double*>(p); // 正确：将void*转换为初始的指针类型
+   > ```
+
+3. `const_cast`：改变运算对象的底层const属性（即对象指向的值无法被修改)
+
+   ![image-20210625212742161](C++primer.assets/image-20210625212742161.png)
+
 ## 概念讨论
 
 1. 初始化和赋值操作的区别
@@ -385,6 +704,10 @@ int main()
 2. 静态类型
 
    ![image-20210618185419172](C++primer.assets/image-20210618185419172.png)
+
+### 左值引用和右值引用
+
+
 
 ## 需要注意的问题
 
@@ -474,6 +797,26 @@ int main()
 ### 建议使用C++版本的C标准头文件
 
 ![image-20210621210025375](C++primer.assets/image-20210621210025375.png)
+
+### 简洁的代码实现
+
+![image-20210625090158650](C++primer.assets/image-20210625090158650.png)
+
+### 运算符优先级
+
+1. 解引用优先级低于
+   - 点运算符
+   - 递增递减运算符
+
+![image-20210625213117259](C++primer.assets/image-20210625213117259.png)
+
+![image-20210625213125960](C++primer.assets/image-20210625213125960.png)
+
+![image-20210625213141309](C++primer.assets/image-20210625213141309.png)
+
+![image-20210625213151263](C++primer.assets/image-20210625213151263.png)
+
+![image-20210625213200895](C++primer.assets/image-20210625213200895.png)
 
 
 
