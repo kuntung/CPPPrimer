@@ -112,6 +112,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+testSrc/ch04/CMakeFiles/test4.10.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.10.dir/rule
+.PHONY : testSrc/ch04/CMakeFiles/test4.10.dir/rule
+
+# Convenience name for target.
+test4.10: testSrc/ch04/CMakeFiles/test4.10.dir/rule
+.PHONY : test4.10
+
+# fast build rule for target.
+test4.10/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.10.dir/build.make testSrc/ch04/CMakeFiles/test4.10.dir/build
+.PHONY : test4.10/fast
+
+# Convenience name for target.
 testSrc/ch04/CMakeFiles/test4.2.dir/rule:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.2.dir/rule
 .PHONY : testSrc/ch04/CMakeFiles/test4.2.dir/rule
@@ -124,6 +138,86 @@ test4.2: testSrc/ch04/CMakeFiles/test4.2.dir/rule
 test4.2/fast:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/build
 .PHONY : test4.2/fast
+
+# Convenience name for target.
+testSrc/ch04/CMakeFiles/test4.3.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.3.dir/rule
+.PHONY : testSrc/ch04/CMakeFiles/test4.3.dir/rule
+
+# Convenience name for target.
+test4.3: testSrc/ch04/CMakeFiles/test4.3.dir/rule
+.PHONY : test4.3
+
+# fast build rule for target.
+test4.3/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.3.dir/build.make testSrc/ch04/CMakeFiles/test4.3.dir/build
+.PHONY : test4.3/fast
+
+# Convenience name for target.
+testSrc/ch04/CMakeFiles/test4.7.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.7.dir/rule
+.PHONY : testSrc/ch04/CMakeFiles/test4.7.dir/rule
+
+# Convenience name for target.
+test4.7: testSrc/ch04/CMakeFiles/test4.7.dir/rule
+.PHONY : test4.7
+
+# fast build rule for target.
+test4.7/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.7.dir/build.make testSrc/ch04/CMakeFiles/test4.7.dir/build
+.PHONY : test4.7/fast
+
+# Convenience name for target.
+testSrc/ch04/CMakeFiles/test4.8.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.8.dir/rule
+.PHONY : testSrc/ch04/CMakeFiles/test4.8.dir/rule
+
+# Convenience name for target.
+test4.8: testSrc/ch04/CMakeFiles/test4.8.dir/rule
+.PHONY : test4.8
+
+# fast build rule for target.
+test4.8/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.8.dir/build.make testSrc/ch04/CMakeFiles/test4.8.dir/build
+.PHONY : test4.8/fast
+
+# Convenience name for target.
+testSrc/ch04/CMakeFiles/test4.9.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/ch04/CMakeFiles/test4.9.dir/rule
+.PHONY : testSrc/ch04/CMakeFiles/test4.9.dir/rule
+
+# Convenience name for target.
+test4.9: testSrc/ch04/CMakeFiles/test4.9.dir/rule
+.PHONY : test4.9
+
+# fast build rule for target.
+test4.9/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.9.dir/build.make testSrc/ch04/CMakeFiles/test4.9.dir/build
+.PHONY : test4.9/fast
+
+test4.10.o: test4.10.cpp.o
+.PHONY : test4.10.o
+
+# target to build an object file
+test4.10.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.10.dir/build.make testSrc/ch04/CMakeFiles/test4.10.dir/test4.10.cpp.o
+.PHONY : test4.10.cpp.o
+
+test4.10.i: test4.10.cpp.i
+.PHONY : test4.10.i
+
+# target to preprocess a source file
+test4.10.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.10.dir/build.make testSrc/ch04/CMakeFiles/test4.10.dir/test4.10.cpp.i
+.PHONY : test4.10.cpp.i
+
+test4.10.s: test4.10.cpp.s
+.PHONY : test4.10.s
+
+# target to generate assembly for a file
+test4.10.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.10.dir/build.make testSrc/ch04/CMakeFiles/test4.10.dir/test4.10.cpp.s
+.PHONY : test4.10.cpp.s
 
 test4.2.o: test4.2.cpp.o
 .PHONY : test4.2.o
@@ -149,6 +243,102 @@ test4.2.cpp.s:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/test4.2.cpp.s
 .PHONY : test4.2.cpp.s
 
+test4.3.o: test4.3.cpp.o
+.PHONY : test4.3.o
+
+# target to build an object file
+test4.3.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.3.dir/build.make testSrc/ch04/CMakeFiles/test4.3.dir/test4.3.cpp.o
+.PHONY : test4.3.cpp.o
+
+test4.3.i: test4.3.cpp.i
+.PHONY : test4.3.i
+
+# target to preprocess a source file
+test4.3.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.3.dir/build.make testSrc/ch04/CMakeFiles/test4.3.dir/test4.3.cpp.i
+.PHONY : test4.3.cpp.i
+
+test4.3.s: test4.3.cpp.s
+.PHONY : test4.3.s
+
+# target to generate assembly for a file
+test4.3.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.3.dir/build.make testSrc/ch04/CMakeFiles/test4.3.dir/test4.3.cpp.s
+.PHONY : test4.3.cpp.s
+
+test4.7.o: test4.7.cpp.o
+.PHONY : test4.7.o
+
+# target to build an object file
+test4.7.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.7.dir/build.make testSrc/ch04/CMakeFiles/test4.7.dir/test4.7.cpp.o
+.PHONY : test4.7.cpp.o
+
+test4.7.i: test4.7.cpp.i
+.PHONY : test4.7.i
+
+# target to preprocess a source file
+test4.7.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.7.dir/build.make testSrc/ch04/CMakeFiles/test4.7.dir/test4.7.cpp.i
+.PHONY : test4.7.cpp.i
+
+test4.7.s: test4.7.cpp.s
+.PHONY : test4.7.s
+
+# target to generate assembly for a file
+test4.7.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.7.dir/build.make testSrc/ch04/CMakeFiles/test4.7.dir/test4.7.cpp.s
+.PHONY : test4.7.cpp.s
+
+test4.8.o: test4.8.cpp.o
+.PHONY : test4.8.o
+
+# target to build an object file
+test4.8.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.8.dir/build.make testSrc/ch04/CMakeFiles/test4.8.dir/test4.8.cpp.o
+.PHONY : test4.8.cpp.o
+
+test4.8.i: test4.8.cpp.i
+.PHONY : test4.8.i
+
+# target to preprocess a source file
+test4.8.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.8.dir/build.make testSrc/ch04/CMakeFiles/test4.8.dir/test4.8.cpp.i
+.PHONY : test4.8.cpp.i
+
+test4.8.s: test4.8.cpp.s
+.PHONY : test4.8.s
+
+# target to generate assembly for a file
+test4.8.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.8.dir/build.make testSrc/ch04/CMakeFiles/test4.8.dir/test4.8.cpp.s
+.PHONY : test4.8.cpp.s
+
+test4.9.o: test4.9.cpp.o
+.PHONY : test4.9.o
+
+# target to build an object file
+test4.9.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.9.dir/build.make testSrc/ch04/CMakeFiles/test4.9.dir/test4.9.cpp.o
+.PHONY : test4.9.cpp.o
+
+test4.9.i: test4.9.cpp.i
+.PHONY : test4.9.i
+
+# target to preprocess a source file
+test4.9.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.9.dir/build.make testSrc/ch04/CMakeFiles/test4.9.dir/test4.9.cpp.i
+.PHONY : test4.9.cpp.i
+
+test4.9.s: test4.9.cpp.s
+.PHONY : test4.9.s
+
+# target to generate assembly for a file
+test4.9.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/ch04/CMakeFiles/test4.9.dir/build.make testSrc/ch04/CMakeFiles/test4.9.dir/test4.9.cpp.s
+.PHONY : test4.9.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +348,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test4.10"
 	@echo "... test4.2"
+	@echo "... test4.3"
+	@echo "... test4.7"
+	@echo "... test4.8"
+	@echo "... test4.9"
+	@echo "... test4.10.o"
+	@echo "... test4.10.i"
+	@echo "... test4.10.s"
 	@echo "... test4.2.o"
 	@echo "... test4.2.i"
 	@echo "... test4.2.s"
+	@echo "... test4.3.o"
+	@echo "... test4.3.i"
+	@echo "... test4.3.s"
+	@echo "... test4.7.o"
+	@echo "... test4.7.i"
+	@echo "... test4.7.s"
+	@echo "... test4.8.o"
+	@echo "... test4.8.i"
+	@echo "... test4.8.s"
+	@echo "... test4.9.o"
+	@echo "... test4.9.i"
+	@echo "... test4.9.s"
 .PHONY : help
 
 

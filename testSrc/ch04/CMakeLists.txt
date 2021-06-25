@@ -1,1 +1,6 @@
 add_executable(test4.2 test4.2.cpp)
+add_executable(test4.3 test4.3.cpp)
+add_executable(test4.7 test4.7.cpp)
+add_executable(test4.8 test4.8.cpp)
+add_executable(test4.9 test4.9.cpp)
+add_executable(test4.10 test4.10.cpp)

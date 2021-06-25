@@ -9,7 +9,13 @@
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/CMakeFiles/test3.5.4.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/CMakeFiles/test3.5.5.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/CMakeFiles/test3.6.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.10.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.2.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.3.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/test4.6.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.7.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.8.dir
+/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/CMakeFiles/test4.9.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/testDecAndDef.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/CMakeFiles/testFor.dir
 /home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/CMakeFiles/testInitial.dir

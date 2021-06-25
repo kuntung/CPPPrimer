@@ -112,6 +112,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+testSrc/tests/CMakeFiles/test4.6.dir/rule:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/tests/CMakeFiles/test4.6.dir/rule
+.PHONY : testSrc/tests/CMakeFiles/test4.6.dir/rule
+
+# Convenience name for target.
+test4.6: testSrc/tests/CMakeFiles/test4.6.dir/rule
+.PHONY : test4.6
+
+# fast build rule for target.
+test4.6/fast:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/tests/CMakeFiles/test4.6.dir/build.make testSrc/tests/CMakeFiles/test4.6.dir/build
+.PHONY : test4.6/fast
+
+# Convenience name for target.
 testSrc/tests/CMakeFiles/testDecAndDef.dir/rule:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f CMakeFiles/Makefile2 testSrc/tests/CMakeFiles/testDecAndDef.dir/rule
 .PHONY : testSrc/tests/CMakeFiles/testDecAndDef.dir/rule
@@ -152,6 +166,30 @@ varDefineTest: testSrc/tests/CMakeFiles/varDefineTest.dir/rule
 varDefineTest/fast:
 	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/tests/CMakeFiles/varDefineTest.dir/build.make testSrc/tests/CMakeFiles/varDefineTest.dir/build
 .PHONY : varDefineTest/fast
+
+test4.6.o: test4.6.cpp.o
+.PHONY : test4.6.o
+
+# target to build an object file
+test4.6.cpp.o:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/tests/CMakeFiles/test4.6.dir/build.make testSrc/tests/CMakeFiles/test4.6.dir/test4.6.cpp.o
+.PHONY : test4.6.cpp.o
+
+test4.6.i: test4.6.cpp.i
+.PHONY : test4.6.i
+
+# target to preprocess a source file
+test4.6.cpp.i:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/tests/CMakeFiles/test4.6.dir/build.make testSrc/tests/CMakeFiles/test4.6.dir/test4.6.cpp.i
+.PHONY : test4.6.cpp.i
+
+test4.6.s: test4.6.cpp.s
+.PHONY : test4.6.s
+
+# target to generate assembly for a file
+test4.6.cpp.s:
+	cd /home/xiaotang/GitHub/CPPPrimer/build/debug && $(MAKE) -f testSrc/tests/CMakeFiles/test4.6.dir/build.make testSrc/tests/CMakeFiles/test4.6.dir/test4.6.cpp.s
+.PHONY : test4.6.cpp.s
 
 testDecAndDef.o: testDecAndDef.cpp.o
 .PHONY : testDecAndDef.o
@@ -234,9 +272,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test4.6"
 	@echo "... testDecAndDef"
 	@echo "... testInitial"
 	@echo "... varDefineTest"
+	@echo "... test4.6.o"
+	@echo "... test4.6.i"
+	@echo "... test4.6.s"
 	@echo "... testDecAndDef.o"
 	@echo "... testDecAndDef.i"
 	@echo "... testDecAndDef.s"

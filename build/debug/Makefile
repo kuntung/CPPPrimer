@@ -177,6 +177,19 @@ test2.14/fast:
 .PHONY : test2.14/fast
 
 #=============================================================================
+# Target rules for targets named test4.10
+
+# Build rule for target.
+test4.10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.10
+.PHONY : test4.10
+
+# fast build rule for target.
+test4.10/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.10.dir/build.make testSrc/ch04/CMakeFiles/test4.10.dir/build
+.PHONY : test4.10/fast
+
+#=============================================================================
 # Target rules for targets named test4.2
 
 # Build rule for target.
@@ -188,6 +201,71 @@ test4.2: cmake_check_build_system
 test4.2/fast:
 	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.2.dir/build.make testSrc/ch04/CMakeFiles/test4.2.dir/build
 .PHONY : test4.2/fast
+
+#=============================================================================
+# Target rules for targets named test4.3
+
+# Build rule for target.
+test4.3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.3
+.PHONY : test4.3
+
+# fast build rule for target.
+test4.3/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.3.dir/build.make testSrc/ch04/CMakeFiles/test4.3.dir/build
+.PHONY : test4.3/fast
+
+#=============================================================================
+# Target rules for targets named test4.7
+
+# Build rule for target.
+test4.7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.7
+.PHONY : test4.7
+
+# fast build rule for target.
+test4.7/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.7.dir/build.make testSrc/ch04/CMakeFiles/test4.7.dir/build
+.PHONY : test4.7/fast
+
+#=============================================================================
+# Target rules for targets named test4.8
+
+# Build rule for target.
+test4.8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.8
+.PHONY : test4.8
+
+# fast build rule for target.
+test4.8/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.8.dir/build.make testSrc/ch04/CMakeFiles/test4.8.dir/build
+.PHONY : test4.8/fast
+
+#=============================================================================
+# Target rules for targets named test4.9
+
+# Build rule for target.
+test4.9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.9
+.PHONY : test4.9
+
+# fast build rule for target.
+test4.9/fast:
+	$(MAKE) -f testSrc/ch04/CMakeFiles/test4.9.dir/build.make testSrc/ch04/CMakeFiles/test4.9.dir/build
+.PHONY : test4.9/fast
+
+#=============================================================================
+# Target rules for targets named test4.6
+
+# Build rule for target.
+test4.6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test4.6
+.PHONY : test4.6
+
+# fast build rule for target.
+test4.6/fast:
+	$(MAKE) -f testSrc/tests/CMakeFiles/test4.6.dir/build.make testSrc/tests/CMakeFiles/test4.6.dir/build
+.PHONY : test4.6/fast
 
 #=============================================================================
 # Target rules for targets named testDecAndDef
@@ -333,7 +411,13 @@ help:
 	@echo "... test1.4.1"
 	@echo "... test2.1.2"
 	@echo "... test2.14"
+	@echo "... test4.10"
 	@echo "... test4.2"
+	@echo "... test4.3"
+	@echo "... test4.7"
+	@echo "... test4.8"
+	@echo "... test4.9"
+	@echo "... test4.6"
 	@echo "... testDecAndDef"
 	@echo "... testInitial"
 	@echo "... varDefineTest"
