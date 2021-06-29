@@ -39,6 +39,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch04/cmake_install.cmake")
   INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/tests/cmake_install.cmake")
   INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch03/cmake_install.cmake")
+  INCLUDE("/home/xiaotang/GitHub/CPPPrimer/build/debug/testSrc/ch05/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

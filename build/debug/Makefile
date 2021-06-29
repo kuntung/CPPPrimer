@@ -397,6 +397,71 @@ testFor/fast:
 	$(MAKE) -f testSrc/ch03/CMakeFiles/testFor.dir/build.make testSrc/ch03/CMakeFiles/testFor.dir/build
 .PHONY : testFor/fast
 
+#=============================================================================
+# Target rules for targets named test5.1
+
+# Build rule for target.
+test5.1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5.1
+.PHONY : test5.1
+
+# fast build rule for target.
+test5.1/fast:
+	$(MAKE) -f testSrc/ch05/CMakeFiles/test5.1.dir/build.make testSrc/ch05/CMakeFiles/test5.1.dir/build
+.PHONY : test5.1/fast
+
+#=============================================================================
+# Target rules for targets named test5.3.1
+
+# Build rule for target.
+test5.3.1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5.3.1
+.PHONY : test5.3.1
+
+# fast build rule for target.
+test5.3.1/fast:
+	$(MAKE) -f testSrc/ch05/CMakeFiles/test5.3.1.dir/build.make testSrc/ch05/CMakeFiles/test5.3.1.dir/build
+.PHONY : test5.3.1/fast
+
+#=============================================================================
+# Target rules for targets named test5.3.2
+
+# Build rule for target.
+test5.3.2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5.3.2
+.PHONY : test5.3.2
+
+# fast build rule for target.
+test5.3.2/fast:
+	$(MAKE) -f testSrc/ch05/CMakeFiles/test5.3.2.dir/build.make testSrc/ch05/CMakeFiles/test5.3.2.dir/build
+.PHONY : test5.3.2/fast
+
+#=============================================================================
+# Target rules for targets named test5.4.1
+
+# Build rule for target.
+test5.4.1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5.4.1
+.PHONY : test5.4.1
+
+# fast build rule for target.
+test5.4.1/fast:
+	$(MAKE) -f testSrc/ch05/CMakeFiles/test5.4.1.dir/build.make testSrc/ch05/CMakeFiles/test5.4.1.dir/build
+.PHONY : test5.4.1/fast
+
+#=============================================================================
+# Target rules for targets named test5.6.3
+
+# Build rule for target.
+test5.6.3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test5.6.3
+.PHONY : test5.6.3
+
+# fast build rule for target.
+test5.6.3/fast:
+	$(MAKE) -f testSrc/ch05/CMakeFiles/test5.6.3.dir/build.make testSrc/ch05/CMakeFiles/test5.6.3.dir/build
+.PHONY : test5.6.3/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -428,6 +493,11 @@ help:
 	@echo "... test3.5.5"
 	@echo "... test3.6"
 	@echo "... testFor"
+	@echo "... test5.1"
+	@echo "... test5.3.1"
+	@echo "... test5.3.2"
+	@echo "... test5.4.1"
+	@echo "... test5.6.3"
 .PHONY : help
 
 

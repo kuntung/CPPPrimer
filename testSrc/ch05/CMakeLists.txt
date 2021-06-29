@@ -1,0 +1,5 @@
+add_executable(test5.1 test5.1.cpp)
+add_executable(test5.3.1 test5.3.1.cpp)
+add_executable(test5.3.2 test5.3.2.cpp)
+add_executable(test5.4.1 test5.4.1.cpp)
+add_executable(test5.6.3 test5.6.3.cpp)

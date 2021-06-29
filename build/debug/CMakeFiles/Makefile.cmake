@@ -15,6 +15,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "../../testSrc/ch02/CMakeLists.txt"
   "../../testSrc/ch03/CMakeLists.txt"
   "../../testSrc/ch04/CMakeLists.txt"
+  "../../testSrc/ch05/CMakeLists.txt"
   "../../testSrc/tests/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -56,6 +57,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "testSrc/ch04/CMakeFiles/CMakeDirectoryInformation.cmake"
   "testSrc/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "testSrc/ch03/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "testSrc/ch05/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -82,4 +84,9 @@ SET(CMAKE_DEPEND_INFO_FILES
   "testSrc/ch03/CMakeFiles/test3.5.5.dir/DependInfo.cmake"
   "testSrc/ch03/CMakeFiles/test3.6.dir/DependInfo.cmake"
   "testSrc/ch03/CMakeFiles/testFor.dir/DependInfo.cmake"
+  "testSrc/ch05/CMakeFiles/test5.1.dir/DependInfo.cmake"
+  "testSrc/ch05/CMakeFiles/test5.3.1.dir/DependInfo.cmake"
+  "testSrc/ch05/CMakeFiles/test5.3.2.dir/DependInfo.cmake"
+  "testSrc/ch05/CMakeFiles/test5.4.1.dir/DependInfo.cmake"
+  "testSrc/ch05/CMakeFiles/test5.6.3.dir/DependInfo.cmake"
   )

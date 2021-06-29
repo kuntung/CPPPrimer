@@ -1,0 +1,6 @@
+digraph GG {
+node [
+  fontsize = "12"
+];
+    "node26" [ label="test5.6.3" shape="house"];
+}

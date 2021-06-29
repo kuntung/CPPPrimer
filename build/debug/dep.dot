@@ -20,6 +20,11 @@ node [
     "node8" [ label="test4.7" shape="house"];
     "node9" [ label="test4.8" shape="house"];
     "node10" [ label="test4.9" shape="house"];
+    "node22" [ label="test5.1" shape="house"];
+    "node23" [ label="test5.3.1" shape="house"];
+    "node24" [ label="test5.3.2" shape="house"];
+    "node25" [ label="test5.4.1" shape="house"];
+    "node26" [ label="test5.6.3" shape="house"];
     "node12" [ label="testDecAndDef" shape="house"];
     "node21" [ label="testFor" shape="house"];
     "node13" [ label="testInitial" shape="house"];
